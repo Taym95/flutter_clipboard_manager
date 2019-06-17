@@ -9,7 +9,6 @@ Add `flutter_clipboard_manager` to your `pubspec.yamlfile`.
 ### Usage
 
 ```dart
-import 'package:flutter/material.dart';
 import 'package:flutter_clipboard_manager/flutter_clipboard_manager.dart';
 
 // Write to clipboard 

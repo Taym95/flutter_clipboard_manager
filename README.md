@@ -1,14 +1,27 @@
 # flutter_clipboard_manager
 
-A new flutter plugin project.
+![ezgif-1-e24ee065ce48](https://user-images.githubusercontent.com/14943106/59601797-62cd5a80-9105-11e9-8262-5a9aa406f772.gif)
 
-## Getting Started
+### Installation
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+Add `flutter_clipboard_manager` to your `pubspec.yamlfile`.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### Usage
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_clipboard_manager/flutter_clipboard_manager.dart';
+
+// Write to clipboard 
+FlutterClipboardManager.copyToClipBoard("Atchou chwiya!").then((result) {
+    if(result){
+        // Write to clipboard success
+    }
+});
+
+// Read from clipboard
+FlutterClipboardManager.copyFromClipBoard().then((result) {
+    // Clipboard data
+    print(result);
+});
+```

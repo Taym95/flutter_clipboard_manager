@@ -14,8 +14,4 @@ void main() {
   tearDown(() {
     channel.setMockMethodCallHandler(null);
   });
-
-  test('getPlatformVersion', () async {
-    expect(await FlutterClipboardManager.platformVersion, '42');
-  });
 }

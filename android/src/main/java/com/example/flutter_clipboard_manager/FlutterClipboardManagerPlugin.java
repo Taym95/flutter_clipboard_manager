@@ -1,5 +1,9 @@
 package com.example.flutter_clipboard_manager;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
+
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
@@ -10,14 +14,14 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 public class FlutterClipboardManagerPlugin implements MethodCallHandler {
   private Registrar registrar;
 
-  private ClipboardManagerPlugin(Registrar registrar){
+  private FlutterClipboardManagerPlugin(Registrar registrar){
     this.registrar=registrar;
   }
 
   /** Plugin registration. */
   public static void registerWith(Registrar registrar) {
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_clipboard_manager");
-    channel.setMethodCallHandler(new FlutterClipboardManagerPlugin());
+    channel.setMethodCallHandler(new FlutterClipboardManagerPlugin(registrar));
   }
 
   @Override

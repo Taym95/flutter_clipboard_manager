@@ -7,7 +7,7 @@ void main() {
 
   setUp(() {
     channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
+      // todo: add tests
     });
   });
 

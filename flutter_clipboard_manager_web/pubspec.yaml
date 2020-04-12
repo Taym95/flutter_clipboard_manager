@@ -23,7 +23,9 @@ dependencies:
 
   # todo: replace with Pub dependency once the platform interface has been published to Pub.
   flutter_clipboard_manager_platform_interface:
-    path: ../flutter_clipboard_manager_platform_interface
+    git:
+      urL: https://github.com/simpleclub/flutter_clipboard_manager
+      path: flutter_clipboard_manager_platform_interface
 
 dev_dependencies:
   flutter_test:

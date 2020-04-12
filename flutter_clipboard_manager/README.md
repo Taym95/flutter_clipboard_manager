@@ -1,4 +1,4 @@
-# flutter_clipboard_manager
+# flutter_clipboard_manager [![](https://img.shields.io/pub/v/flutter_clipboard_manager.svg)](https://pub.dev/packages/flutter_clipboard_manager)
 
 ![demo](https://user-images.githubusercontent.com/14943106/59601797-62cd5a80-9105-11e9-8262-5a9aa406f772.gif)
 

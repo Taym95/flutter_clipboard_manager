@@ -12,11 +12,7 @@ flutter:
       ios:
         pluginClass: FLTURLLauncherPlugin
       web:
-        # todo: use Pub dependency once the web plugin has been published to Pub.
-        default_package:
-          git:
-            urL: https://github.com/simpleclub/flutter_clipboard_manager
-            path: flutter_clipboard_manager_web
+        default_package: flutter_clipboard_manager_web
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -37,3 +33,9 @@ dev_dependencies:
     sdk: flutter
 
   pedantic: ^1.8.0
+
+  # todo: use Pub dependency once the web plugin has been published to Pub, i.e. remove this.
+  flutter_clipboard_manager_web:
+    git:
+      url: https://github.com/simpleclub/flutter_clipboard_manager
+      path: flutter_clipboard_manager_web

@@ -1,7 +1,7 @@
 name: flutter_clipboard_manager_web
 description: Web platform implementation of the flutter_clipboard_manager plugin.
 homepage: https://github.com/Taym95/flutter_clipboard_manager/blob/master/flutter_clipboard_manager_web
-version: 0.0.1
+version: 0.1.0
 
 flutter:
   plugin:
@@ -21,10 +21,10 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
 
-  # todo: replace with Pub dependency once the platform interface has been published to Pub.
+  # todo: use Pub dependency once the platform interface has been published to Pub.
   flutter_clipboard_manager_platform_interface:
     git:
-      urL: https://github.com/simpleclub/flutter_clipboard_manager
+      url: https://github.com/simpleclub/flutter_clipboard_manager
       path: flutter_clipboard_manager_platform_interface
 
 dev_dependencies:

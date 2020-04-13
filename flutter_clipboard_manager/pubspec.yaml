@@ -28,14 +28,14 @@ dependencies:
       url: https://github.com/simpleclub/flutter_clipboard_manager
       path: flutter_clipboard_manager_platform_interface
 
+  # todo: remove this once the web plugin has been published to Pub.
+  flutter_clipboard_manager_web:
+    git:
+      url: https://github.com/simpleclub/flutter_clipboard_manager
+      path: flutter_clipboard_manager_web
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   pedantic: ^1.8.0
-
-  # todo: use Pub dependency once the web plugin has been published to Pub, i.e. remove this.
-  flutter_clipboard_manager_web:
-    git:
-      url: https://github.com/simpleclub/flutter_clipboard_manager
-      path: flutter_clipboard_manager_web

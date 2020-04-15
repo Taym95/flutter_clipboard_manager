@@ -1,0 +1,41 @@
+name: flutter_clipboard_manager
+description: A Flutter plugin that allows writing to and copying from the clipboard.
+version: 0.1.0
+homepage: https://github.com/Taym95/flutter_clipboard_manager/blob/master/flutter_clipboard_manager
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.flutter_clipboard_manager
+        pluginClass: FlutterClipboardManagerPlugin
+      ios:
+        pluginClass: FLTURLLauncherPlugin
+      web:
+        default_package: flutter_clipboard_manager_web
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.12.13 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # todo: use Pub dependency once the platform interface has been published to Pub.
+  flutter_clipboard_manager_platform_interface:
+    git:
+      url: https://github.com/simpleclub/flutter_clipboard_manager
+      path: flutter_clipboard_manager_platform_interface
+
+  # todo: remove this once the web plugin has been published to Pub.
+  flutter_clipboard_manager_web:
+    git:
+      url: https://github.com/simpleclub/flutter_clipboard_manager
+      path: flutter_clipboard_manager_web
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  pedantic: ^1.8.0
